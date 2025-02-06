@@ -20,7 +20,10 @@ public class Calculator {
         } else if (operation.equals("multiply")){
         double product = num1 * num2;
         System.out.println("You chose to multiply. The product of " + num1 + " and " + num2 + " is " + product);
-        }else if (operation.equals("divide")) {
+        }else if (operation.equals("divide"))
+        if (num2 ==0) {
+            System.out.println("Error: Divide by Zero");
+        } else {
             double quotient = num1 / num2;
             System.out.println("You chose to divide. The quotient of " + num1 + " and " + num2 + " is: " +quotient);
         } else {
